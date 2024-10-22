@@ -62,8 +62,7 @@ pipeline {
             steps {
                 script{
                 withDockerRegistry(credentialsId: 'dockerhub-cred', url: 'https://index.docker.io/v1/') {
-                    sh "docker push lioneldoc/blog-app:tagname
-"
+                    sh "docker push lioneldoc/blog-app:tagname"
                 }
                 }
             }
